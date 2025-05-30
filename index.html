@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fruit Memo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2a2a72">
+</head>
+<body>
+
+    <!-- Start Screen Words -->
+  <div id="start-screen" class="overlay">
+    <div class="start-message">
+        <h2>May the Odds be in Your Favor</h2>
+        <button id="start-btn">Lets Begin!</button>
+    </div>
+  </div>
+      
+
+  <h1>Fruit Memo</h1>
+  <div class="controls">
+    <label for="difficulty">Skill Level:</label>
+    <select id="difficulty">
+      <option value="easy">Novice</option>
+      <option value="medium" selected>Intermediate</option>
+      <option value="hard">Advanced</option>
+    </select>
+    <button id="start-btn">Start Game</button>
+    <button id="restart-btn" disabled>Restart</button>
+    <div id="score">Score: 0</div>
+    <div id="timer">Time: 0s</div>
+  </div>
+  <div id="game-board"></div>
+  <div id="message"></div>
+
+  <audio id="flip-sound" src="sounds/flip.wav" preload="auto"></audio>
+  <audio id="match-sound" src="sounds/match.wav" preload="auto"></audio>
+  <audio id="win-sound" src="sounds/win.wav" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
